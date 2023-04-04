@@ -2,3 +2,27 @@
     margin: 0; padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background: #4974a5;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bird{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: #fff;
+
+    .head{
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        background: #dc002d;
+        border-radius: 50%;
+        border: 3px solid #000801;
+    }
+}
