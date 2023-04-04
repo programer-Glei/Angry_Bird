@@ -24,5 +24,36 @@ body{
         background: #dc002d;
         border-radius: 50%;
         border: 3px solid #000801;
+        overflow: hidden;
+
+        &::before{
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: #eccaa8;
+            border-radius: 50%;
+            top: 64%;
+            left: 15%;
+        }
+    }
+
+    .tail-middle, .tail-top, .tail-bottom{
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        clip-path: polygon(0 27%, 100% 40%, 100% 68%, 0 79%);
+        background: #000801;
+    }
+
+    .tail-middle{
+        top: 36%;
+        left: -17%;
+    }
+
+    .tail-top{
+        top: 30%;
+        left: -8%;
+        transform: rotate(35deg);
     }
 }

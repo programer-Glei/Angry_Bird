@@ -33,5 +33,38 @@ body {
   background: #dc002d;
   border-radius: 50%;
   border: 3px solid #000801;
+  overflow: hidden;
+}
+
+.bird .head::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #eccaa8;
+  border-radius: 50%;
+  top: 64%;
+  left: 15%;
+}
+
+.bird .tail-middle, .bird .tail-top, .bird .tail-bottom {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  -webkit-clip-path: polygon(0 27%, 100% 40%, 100% 68%, 0 79%);
+          clip-path: polygon(0 27%, 100% 40%, 100% 68%, 0 79%);
+  background: #000801;
+}
+
+.bird .tail-middle {
+  top: 36%;
+  left: -17%;
+}
+
+.bird .tail-top {
+  top: 30%;
+  left: -8%;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
 }
 /*# sourceMappingURL=estilo.css.map */
