@@ -23,7 +23,6 @@ body {
   position: relative;
   width: 400px;
   height: 400px;
-  background: #fff;
 }
 
 .bird .head {
@@ -196,5 +195,33 @@ body {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   border: 1px solid #000;
+}
+
+.bird .hair {
+  content: '';
+  position: absolute;
+  top: -67px;
+  left: 44%;
+  width: 55px;
+  height: 110px;
+  background: #dc002d;
+  -webkit-transform: rotate(-27deg);
+          transform: rotate(-27deg);
+  border: 3px solid #000801;
+  border-radius: 50%;
+}
+
+.bird .hair::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: -75%;
+  width: 55px;
+  height: 110px;
+  background: #dc002d;
+  -webkit-transform: rotate(-27deg);
+          transform: rotate(-27deg);
+  border: 3px solid #000801;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=estilo.css.map */
