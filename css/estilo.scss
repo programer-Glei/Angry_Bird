@@ -82,6 +82,7 @@ body{
         height: 50px;
         background: #000801;
         transform: rotate(8deg);
+        z-index: 3;
     }
 
     .eye-right{
@@ -92,6 +93,7 @@ body{
         height: 120px;
         background: #fff;
         border-radius: 50%;
+        border: 2px solid #000801;
         box-shadow: 10px 3px 10px 3px #ab0024;
 
         &::before{
@@ -102,6 +104,7 @@ body{
             width: 40px;
             height: 40px;
             border-radius: 50%;
+            border: 2px solid #000801;
             background: #000;
         }
 
@@ -110,6 +113,41 @@ body{
             position: absolute;
             top: 29%;
             left: 43%;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #fff;
+        }
+    }
+
+    .eye-left{
+        position: absolute;
+        top: 30%;
+        left: 21%;
+        width: 120px;
+        height: 120px;
+        background: #fff;
+        border-radius: 50%;
+        border: 2px solid #000801;
+        box-shadow: -10px 3px 10px 3px #ab0024;
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 25%;
+            right: 25%;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid #000801;
+            background: #000;
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: 30%;
+            right: 30%;
             width: 10px;
             height: 10px;
             border-radius: 50%;
